@@ -3,27 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Eileen's excuse generator</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <script
+      src="https://kit.fontawesome.com/e6714e8cca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Scribble&family=Yarndings+12+Charted&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1 id="blinking" class="mt-5">
+        <i class="fa-solid fa-key"></i>AVOIDANCE IS KEY
+        <i class="fa-solid fa-key"></i>
+      </h1>
+      <h2 id="excuse" class="mt-5"></h2>
+    </div>
+
+    <div class="container">
+      <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+      <div class="row gy-6">
+        <div class="col-6">
+          <button
+            id="button"
+            class="btn btn-primary btn-lg raised active"
+            type="button"
+          >
+            Canceling plans with a friend?
+          </button>
+        </div>
+        <div class="col-6">
+          <button
+            id="button1"
+            class="btn btn-warning btn-lg raised"
+            type="button1"
+          >
+            Escaping the weight of life's challenges?
+          </button>
+        </div>
+      </div>
+
+      <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+      <div class="row gy-6">
+        <div class="col-6 col-md-4"></div>
+        <div class="col-6 col-md-4">
+          <button
+            id="button2"
+            class="btn btn-primary btn-lg raised"
+            type="button"
+          >
+            Calling out of work?
+          </button>
+        </div>
+        <div class="col-6 col-md-4"></div>
+      </div>
+
+      <!-- Columns are always 50% wide, on mobile and desktop -->
+      <div class="row gy-6">
+        <div class="col-6">
+          <button
+            id="button3"
+            class="btn btn-primary btn-lg raised"
+            type="button"
+          >
+            Breaking up with someone?
+          </button>
+        </div>
+        <div class="col-6">
+          <button
+            id="button4"
+            class="btn btn-primary btn-lg raised"
+            type="button"
+          >
+            Avoiding responsibilities?
+          </button>
+        </div>
       </div>
     </div>
+    <footer>
+      <p>
+        We believe avoiding the crushing weight of life's issues and challenges
+        is the key to living a fufilling life free of worry and
+        responsibilities.
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
